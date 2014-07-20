@@ -1,0 +1,32 @@
+<Alloy>
+	<View>
+	
+		<View id="opacitypageheader" ></View>
+			
+		<View id="pagecontainer" >
+		
+			<View id="pageheader">
+			
+				<Label id="heading" />
+				<Label id="subheading" />
+				<ImageView id="logo" />
+				<View id="socialbar" />	
+				
+			</View>
+		
+			<View id="horBar"  />
+			
+			
+			<View id="pagecontent">
+				
+				<ScrollView id="contentView">
+					<Label id="bio" />
+				</ScrollView>
+				
+			</View> <!-- page content -->
+		
+		</View>	<!-- page container -->
+		
+	</View>		
+</Alloy>
+

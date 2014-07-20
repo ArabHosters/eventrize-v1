@@ -1,0 +1,91 @@
+'#opacitypageheader':{
+	backgroundColor:"white",
+	height:"25%",
+	opacity:"0.6",
+	top:0,
+	zIndex:0
+},
+
+'#pagecontainer':{
+	top:0,
+	zIndex:1,
+	height:"100%",
+	layout:"vertical"
+}
+,
+'#pageheader':{
+	//layout:"vertical",
+	height:"25%",
+	top:0,
+},
+
+'#heading':{
+	top:"5%",
+	height:"55%",
+	left:"5%",
+	width:"80%",
+	color:"#840042",
+	//color:"#B50065",
+	font:{
+		fontSize:"30dp",
+		fontWeight:"bold",
+		font:"Roboto"
+	}
+},
+'#subheading':{
+	top:"65%",
+	height:"30%",
+	left:"5%",
+	width:Ti.UI.SIZE,
+	color:"#333",
+	//color:"#B50065",
+	font:{
+		fontSize:"16dp",
+		font:"Roboto"
+	}
+},
+'#socialbar':{
+	//layout:"horizontal",
+	horizontalWrap:false,
+	height:"32dp",
+	right:"5%",
+	top:"70%",
+	bottom:"5%"
+},
+".social":{
+	opacity:"1",
+	width:"16dp",
+	height:"16dp"	
+},
+'#horBar':{
+	backgroundColor:"#840042",
+	width:Ti.UI.FILL,
+	height:"2dp",
+	top:"0",
+	bottom:"0"
+},
+'#pagecontent':{
+	backgroundColor:"white",
+	top:0,
+	opacity:"0.7",
+	width:"96%",
+	left:"2%",
+	top:"2%",
+	bottom:"2%",
+	height:"70%"
+}
+,
+"#scrollcontent":{
+	showVerticalScrollIndicator:"true",
+	left:"5%",
+	right:"5%",
+	top:"5%",
+	bottom:"5%"	
+},
+"#bio":{
+	font:{
+		fontSize:'18dp',		
+	},
+	color:"#000",
+	top:'5dp'
+}

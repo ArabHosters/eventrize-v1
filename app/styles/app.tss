@@ -1,0 +1,28 @@
+"#home":{
+	
+},
+"#social":{
+	layout:"horizontal",
+	left:"30%"
+},
+".headertitle":{
+	font:{
+		fontSize:"24dp",		
+	},
+	color:"#257FCE",
+	top:"10dp"
+}
+,
+".para":{
+	color:"black",
+	textAlign:"right",
+	font:{
+		fontSize:"18dp"
+	}
+}
+,
+"#content":{
+	left:"10dp",
+	right:"10dp"
+}
+

@@ -1,0 +1,35 @@
+"#feedback":{
+	top:"5%",	
+	layout:"vertical",
+	bottom:"5%"
+},
+
+"#fbRatingbar":{
+	top : '10dp',
+	center:{x:"50%"},
+	height:"50",
+}
+,
+'#fbComment':{
+	top:'10dp',
+	color:"#3589C8", //888
+	textAlign:"left",
+	width:"90%",
+	height:"20%",
+	enableReturnKey :false,
+	returnKeyType:Ti.UI.RETURNKEY_DONE,
+	hintText:"Write your comment",	
+    left : '5%',
+},
+'#fbSubmit':{
+	top:'10dp',
+	height:Ti.UI.SIZE,
+	title:"Submit",
+	center:{x:"50%"},
+	//color:"#3589C8",
+	color:"white",
+	backgroundColor:Alloy.Globals.ThemeColor,
+	bottom:"10dp" 
+}
+
+

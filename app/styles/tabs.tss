@@ -1,0 +1,30 @@
+'.container': {
+	//backgroundImage:'/img/icons/bg-tab.png',
+	backgroundColor:"white",
+	opacity:"0.8",
+	height:'56dp',
+	//height:Ti.UI.SIZE,
+	bottom:0,
+},
+
+'.tab': {
+	zIndex:10,
+	width:'20%',
+	layout:'vertical',
+	height:Ti.UI.SIZE,
+},
+'Label':{
+	height:'auto',
+	bottom:'1dp',
+	font:{
+		fontSize:'12dp'
+	},
+	color:"#000"
+	//font:{fontSize:20}
+},
+'ImageView':{
+	top:'5dp',
+	height:'32dp',
+	width:'32dp',
+	touchEnabled:false
+}

@@ -1,0 +1,28 @@
+'#container': {
+	layout:'vertical',
+	height:Ti.UI.SIZE
+},
+
+'#backdrop': {
+	//backgroundColor:'#232323',
+	backgroundColor:'#fff',
+	opacity:0.75,
+	top:"50dp"
+},
+
+'#loader': {
+	width:'64dp',
+	height:'64dp'
+},
+
+'#message': {
+	color:'#840042',
+	textAlign:'center',
+	height:Ti.UI.SIZE,
+	width:Ti.UI.SIZE,
+	font: {
+		fontSize:'14dp',
+		fontWeight:'bold',
+		fontFamily:'Roboto'
+	}
+}

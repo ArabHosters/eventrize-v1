@@ -1,0 +1,29 @@
+"#feedback":{
+	top:"1%",	
+	layout:"vertical"
+},
+
+"#fbRatingbar":{
+	top : '10dp',
+	center:{x:"50%"},
+	height:"50",
+}
+,
+'#fbComment':{
+	top:'10dp',
+	color:"#3589C8", //888
+	textAlign:"center",
+	width:"90%",
+	height:"20%",
+    left : '5%',
+},
+'#fbSubmit':{
+	top:'10dp',	
+	title:" Rate this session ",
+	center:{x:"50%"},
+	
+	color:"white",
+	backgroundColor:Alloy.Globals.ThemeColor,
+}
+
+

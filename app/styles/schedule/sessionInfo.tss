@@ -1,0 +1,8 @@
+"Label": {
+ 	font:{
+		fontSize:'18dp',		
+	},
+	top:0,
+	color:"#000",
+	width:"100%"
+}

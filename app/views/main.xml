@@ -1,0 +1,12 @@
+<Alloy>
+	<View id="main">
+		
+		<View id="container"  >
+			
+			<View id="content" >
+				
+			</View>
+			<Require id="tabs" src="tabs"/>				
+		</View>
+	</View>
+</Alloy>

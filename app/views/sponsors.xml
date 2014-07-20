@@ -1,0 +1,19 @@
+<Alloy>
+	<View>
+	
+		<View id="pagecontainer" >
+		
+			<View id="pagecontent">
+				
+				<TableView id="contentView" />
+				
+				
+			</View> <!-- page content -->
+			
+			<View id="pagecontentopacity" />
+		
+		</View>	<!-- page container -->
+		
+	</View>		
+</Alloy>
+

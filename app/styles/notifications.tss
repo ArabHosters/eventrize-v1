@@ -1,0 +1,53 @@
+
+'#pagecontainer':{
+	top:0,
+	zIndex:1,
+	height:"100%",
+	//layout:"vertical"
+}
+,
+'#tabbar':{
+	top:0,
+	height:"10%",
+	left:"2%",
+	width:"96%"
+},
+'#pagecontent':{
+	backgroundColor:"transparent",
+	opacity:"1",
+	zIndex:3,
+	width:"96%",
+	left:"2%",
+	top:"10dp",
+	bottom:"10dp",
+	height:"95%"
+}
+,
+'#pagecontentopacity':{
+	backgroundColor:"white",
+	opacity:"0.5",
+	zIndex:2,
+	width:"96%",
+	left:"2%",
+	top:"10dp",
+	bottom:"10dp",
+	height:"95%"
+}
+,
+"#contentView":{
+	//showVerticalScrollIndicator:"true",
+	left:"2%",
+	right:"1%",
+	top:"1%",
+	bottom:"1%"	,
+	//canCancelEvents:true
+	
+},
+"#bio":{
+	font:{
+		fontSize:'18dp',		
+	},
+	color:"#000",
+	top:'5dp',
+	width:"100%"
+}

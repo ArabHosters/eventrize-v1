@@ -1,0 +1,24 @@
+<Alloy>
+	<View id="root" class="container">
+		<View id="home" class="tab">
+			<ImageView id="homeIcon"/>
+			<Label id="homeLabel" color="#e87731" ></Label>
+		</View>
+		<View id="schedule" class="tab">
+			<ImageView id="scheduleIcon"/>
+			<Label id="scheduleLabel" ></Label>
+		</View>
+		<View id="speakers" class="tab">
+			<ImageView id="speakersIcon"/>
+			<Label id="speakersLabel" ></Label>
+		</View>
+		<View id="exhibitors" class="tab">
+			<ImageView id="exhibitorsIcon"/>
+			<Label id="exhibitorsLabel" ></Label>
+		</View>
+		<View id="sponsors" class="tab">
+			<ImageView id="sponsorsIcon"/>
+			<Label id="sponsorsLabel" ></Label>
+		</View>
+	</View>
+</Alloy>

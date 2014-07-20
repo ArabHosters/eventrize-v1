@@ -1,0 +1,20 @@
+<Alloy>
+	<View id="home">
+		
+		<ImageView image="/img/eventrize-logo.png" top="0" bottom="10dp" left="10dp" right="10dp" height="30%"></ImageView>
+		<View top="30%" bottom="10dp" left="10dp" right="10dp" width="Ti.UI.SIZE" height="Ti.UI.SIZE" backgroundColor="transparent"  zIndex="3" layout="vertical" >
+			<View id="social" top="10dp" height="Ti.UI.SIZE" >
+				<ImageView id="swfacebook" width="24dp" height="24dp" image="/img/social/facebook.png" />
+				<ImageView id="swtwitter" width="24dp" height="24dp" left="18dp" image="/img/social/twitter.png" />
+			</View>
+			<ScrollView id="content" layout="vertical" top="10dp">
+				<Label id="headertitle"class="headertitle" top="0"></Label>
+				<Label id="para" class="para"></Label>
+				
+			</ScrollView>
+		</View>
+		
+		<View id="BG"top="30%" bottom="10dp" left="10dp" right="10dp" width="Ti.UI.FILL" height="Ti.UI.FILL" backgroundColor="white" zIndex="2" opacity="0.7"></View>
+	</View>	
+</Alloy>
+

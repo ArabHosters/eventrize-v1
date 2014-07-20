@@ -1,0 +1,123 @@
+'#opacitypageheader':{
+	backgroundColor:"white",
+	height:"25%",
+	opacity:"0.6",
+	zIndex:0,
+	width:"96%",
+	left:"2%",
+	top:0
+},
+
+'#pageheader':{
+	height:"25%",
+	width:"96%",
+	left:"2%",
+	top:0
+},
+
+'#pagecontainer':{
+	top:0,
+	zIndex:1,
+	height:"100%",
+	layout:"vertical"
+}
+,
+
+'#heading':{
+	top:"5%",
+	height:"25%",
+	right:"2%",
+	width:Ti.UI.SIZE, ///"60%",
+	//color:"#09F",
+	color:Alloy.Globals.personDetails.headingColor,
+	
+	font:{
+		fontSize:Alloy.Globals.personDetails.headingSize,
+		fontWeight:"bold",
+		fontFamily:"Roboto"
+	},
+	//borderColor:"red", borderWidth:1
+},
+
+'#subheading':{
+	top:"32%",
+	height:"38%",
+	right:"2%",
+	width:Ti.UI.SIZE, ///"60%",
+	color:Alloy.Globals.personDetails.subheadingColor,
+	//color:"#E56227",
+	//color:"#B50065",
+	font:{
+		fontSize:Alloy.Globals.personDetails.subheadingSize,
+		fontFamily:"Roboto-Italic",
+		fontWeight:"bold"
+	},
+	//verticalAlign:Ti.UI.TEXT_VERTICAL_ALIGNMENT_TOP,
+	//borderColor:"black", borderWidth:1
+	
+},
+
+
+'#logo':{
+	top:"5%",
+	left:"2%",	
+	width:'80dp', //100
+	height:'80dp',//100
+	borderWidth:'3',
+	//borderRadius:'160',
+	//borderColor:'#611F53'
+},	
+'#socialbar':{
+	layout:"horizontal",
+	//horizontalWrap:false,
+	height:"32dp",
+	right:"2%",
+	top:"75%",
+	bottom:"5%",
+	//width:Ti.UI.SIZE,
+	//borderColor:"blue", borderWidth:1
+},
+".social":{
+	opacity:"1",
+	width:"24dp",
+	height:"24dp",
+	//borderColor:"green", borderWidth:1	
+},
+'#horBar':{
+	backgroundColor:Alloy.Globals.personDetails.horBarColor,
+	width:Ti.UI.FILL,
+	height:"2dp",
+	top:"0",
+	bottom:"0",
+	left:"2%",
+	width:"96%"
+},
+
+'#pagecontent':{
+	backgroundColor:Alloy.Globals.personDetails.pagecontentBG,
+	top:0,
+	opacity:"0.8",
+	width:"96%",
+	left:"2%",
+	top:"2%",
+	bottom:"2%",
+	height:"70%"
+}
+,
+"#contentView":{
+	showVerticalScrollIndicator:"true",
+	left:"5%",
+	right:"5%",
+	top:"5%",
+	bottom:"5%"	
+	
+},
+"#bio":{
+	textAlign:"right",
+	font:{
+		fontSize:Alloy.Globals.personDetails.bioSize,		
+	},
+	color:Alloy.Globals.personDetails.bioColor,
+	top:'5dp',
+	width:"100%"
+}

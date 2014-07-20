@@ -1,0 +1,7 @@
+<Alloy>
+	<View id="container">
+		<View id="maps" class="appContent">
+			<View id="mapview" ns="Alloy.Globals.Map" />
+		</View>
+	</View>
+</Alloy>

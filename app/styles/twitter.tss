@@ -1,0 +1,52 @@
+'#pagecontainer':{
+	top:0,
+	zIndex:1,
+	height:"100%"
+	//layout:"vertical"
+}
+,
+'#tabbar':{
+	top:0,
+	height:"10%",
+	left:"2%",
+	width:"96%"
+},
+'#pagecontent':{
+	backgroundColor:"transparent",
+	opacity:"1",
+	zIndex:3,
+	width:"96%",
+	left:"2%",
+	top:"12%",
+	bottom:"2%",
+	height:"85%"
+}
+,
+'#pagecontentopacity':{
+	backgroundColor:Alloy.Globals.twitter.backgroundColor,
+	opacity:"0.5",
+	zIndex:2,
+	width:"96%",
+	left:"2%",
+	top:"12%",
+	bottom:"2%",
+	height:"85%"
+}
+,
+"#contentView":{
+	//showVerticalScrollIndicator:"true",
+	left:"2%",
+	right:"2%",
+	top:"2%",
+	bottom:"2%"	
+	//canCancelEvents:true
+	
+},
+"#bio":{
+	font:{
+		fontSize:'18dp'		
+	},
+	color:"#000",
+	top:'5dp',
+	width:"100%"
+}

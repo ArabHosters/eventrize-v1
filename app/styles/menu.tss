@@ -1,0 +1,86 @@
+'#menu': {
+	width:"85%",
+	top:0,
+	right:"-85%",
+	layout:"vertical",	
+	backgroundColor:Alloy.Globals.menuConf.backgroundColor,
+	zIndex:1
+},
+"#menu_table":{
+	
+},
+'#profile_row':{
+	height:"60",
+	top:0
+},
+'#user_avatar':{
+	width:'50dp',
+	height:'50dp',
+	borderWidth:'1',
+	borderRadius:'20',
+	borderColor:'#1c1c1c',
+	left:10
+},
+'#user_name':{
+	color:'white',
+	left:70,
+	font:{
+		fontSize:'20dp',
+		fontWeight:'bold'
+	},
+}
+
+'.items_rows':{
+	layout:'vertical',
+	selectedBackgroundColor:'#ccc',
+	height:50
+}
+'.items': {
+	color:Alloy.Globals.menuConf.itemsColor,
+	font:{
+		fontSize:Alloy.Globals.menuConf.itemsSize
+	},
+	right:45,
+	top:0 ,
+	textAlign:"right"
+	
+}
+'.items_img':{
+	width:25,
+	height:25,
+	right:10,
+	top:5,
+	
+}
+'#speaker':{
+	width:8,
+	height:27,
+	left:20,
+	right:7
+}
+'.row_cont':{
+	top:5,
+	height:40,
+	
+}
+'TableView':{
+	separatorColor:"transparent",
+}
+
+'.sep1':{
+	width:Ti.UI.FILL,
+	backgroundColor:Alloy.Globals.menuConf.sep1BG,
+	height:1	
+}
+'.sep2':{
+	width:Ti.UI.FILL,
+	backgroundColor:Alloy.Globals.menuConf.sep2BG,
+	height:1	
+},
+'#eventrize':{
+	color:Alloy.Globals.menuConf.eventrizeColor,
+	font:{
+		fontSize:Alloy.Globals.menuConf.eventrizeSize
+	}
+}
+

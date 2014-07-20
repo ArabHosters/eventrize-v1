@@ -1,0 +1,38 @@
+'#pagecontainer':{
+	top:0,
+	zIndex:1,
+	height:"100%"
+	//layout:"vertical"
+},
+'#pagecontent':{
+	backgroundColor:"transparent",
+	opacity:"1",
+	zIndex:3,
+	width:"96%",
+	left:"2%",
+	top:"2%",
+	bottom:"2%",
+	height:Ti.UI.FILL
+}
+,
+'#pagecontentopacity':{
+	backgroundColor:Alloy.Globals.sponsors.backgroundColor,
+	opacity:"0.5",
+	zIndex:2,
+	width:"96%",
+	left:"2%",
+	top:"2%",
+	bottom:"2%",
+	height:Ti.UI.FILL
+}
+,
+"#contentView":{
+	//showVerticalScrollIndicator:"true",
+	left:"2%",
+	right:"2%",
+	top:"2%",
+	bottom:"2%"	,
+	separatorColor:"transparent"
+	//canCancelEvents:true
+	
+}

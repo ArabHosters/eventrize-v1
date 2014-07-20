@@ -1,0 +1,21 @@
+"#home":{
+	
+},
+"#social":{
+	layout:"horizontal",
+	left:"35%"
+},
+".headertitle":{
+	textAlign:"right"
+}
+,
+".para":{
+	textAlign:"right",
+	
+}
+,
+"#content":{
+	left:"10dp",
+	right:"10dp"
+}
+

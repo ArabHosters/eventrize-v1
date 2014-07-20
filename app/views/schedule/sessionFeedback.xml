@@ -1,0 +1,7 @@
+<Alloy>
+	<View id="feedback">
+		<View id="fbRatingbar" />
+        <Label id="fbComment"/>
+        <Button id="fbSubmit" onClick="ratethis"/>	
+	</View>	
+</Alloy>

@@ -1,0 +1,11 @@
+<Alloy>
+	<View id="headerbar" platform="android">
+		<View id="backbutton">
+			<View id="backangle"/>
+			<View id="appicon"/>
+		</View>
+		<Label id="headertitle"></Label>
+		<View id="actionButtons"></View>
+	</View>
+	<View id="bottomline" platform="android"/>
+</Alloy>

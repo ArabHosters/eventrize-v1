@@ -1,0 +1,124 @@
+'#opacitypageheader':{
+	backgroundColor:"white",
+	height:"25%",
+	opacity:"0.6",
+	zIndex:0,
+	width:"96%",
+	left:"2%",
+	top:0
+},
+
+'#pageheader':{
+	height:"25%",
+	width:"96%",
+	left:"2%",
+	top:0
+},
+
+'#pagecontainer':{
+	top:0,
+	zIndex:1,
+	height:"100%",
+	layout:"vertical"
+}
+,
+
+'#heading':{
+	top:"5%",
+	height:"50%",
+	left:"2%",
+	width:"90%",
+	color:Alloy.Globals.ThemeColor,
+	font:{
+		fontSize: Alloy.Globals.scheduleDetails.headingSize,
+		fontWeight:"bold",
+		fontFamily:"Roboto"
+	},
+	
+},
+
+'#subheading':{
+	top:"60%",
+	height:"20%",
+	left:"2%",
+	width:"90%",
+	color:Alloy.Globals.scheduleDetails.subheadingColor,
+	font:{
+		fontSize:Alloy.Globals.scheduleDetails.subheadingSize,
+		fontFamily:"Roboto-Italic",
+		fontWeight:"bold"
+	},
+	verticalAlign:Ti.UI.TEXT_VERTICAL_ALIGNMENT_TOP,
+	
+	
+},
+
+
+'#logo':{
+	top:"5%",
+	right:"2%",	
+	width:'80dp', //100
+	height:'80dp',//100
+	borderWidth:'3',
+	
+},	
+
+'#socialbar':{
+	layout:"horizontal",
+	//horizontalWrap:false,
+	height:"32dp",
+	left:"2%",
+	top:"75%",
+	bottom:"5%",
+	
+},
+".social":{
+	opacity:"1",
+	width:"24dp",
+	height:"24dp",
+	//borderColor:"green", borderWidth:1	
+},
+'#horBar':{
+	backgroundColor:Alloy.Globals.ThemeColor,
+	width:Ti.UI.FILL,
+	height:"2dp",
+	top:"0",
+	bottom:"0",
+	left:"2%",
+	width:"96%"
+},
+'#tabbar':{	
+	top:"1%",
+	height:"10%",
+	left:"2%",
+	width:"96%",
+	//borderColor:"red", borderWidth:1
+},
+
+'#pagecontent':{
+	backgroundColor:"white",
+	opacity:"0.8",
+	width:"96%",
+	left:"2%",
+	top:"1%",
+	bottom:"2%",
+	height:"60%",
+	//borderColor:"blue", borderWidth:1
+}
+,
+"#contentView":{
+	showVerticalScrollIndicator:"true",
+	left:"5%",
+	right:"5%",
+	top:"5%",
+	bottom:"5%"	
+	
+},
+"#bio":{
+	font:{
+		fontSize:'18dp',		
+	},
+	color:"#000",
+	top:'5dp',
+	width:"100%"
+}

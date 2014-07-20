@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="app">كايرو سيكيوريتي كامب\u0020</string>
+	<string name="lang">العربية</string>
+	<string name="schedule_days">الأيام\u0020 :\u0020</string>
+	<string name="scheduleDetails">المحاضرة</string>
+	
+	
+	
+	<string name="home">الرئيسية</string>
+	<string name="schedule">الجدول</string>
+	<string name="speakers">المتحدثون</string>
+	<string name="exhibitors">العارضون</string>
+	<string name="sponsors">الرعاة</string>
+	<string name="location">الخريطة</string>
+	<string name="notifications">الإشعارات</string>
+	<string name="twitter">تويتر</string>
+	<string name="Twitter_load">جاري تحميل التويتات، يرجي الانتظار \u0020</string>
+	<string name="Twitter_header">القنوات :</string>
+	<string name="notf_load">جاري تحميل الاشعارات،يرجي الانتظار</string>
+	<string name="notf_empty">لا يوجد اشعارات حاليا!</string>
+	<string name="notf_toast">خطأ في الوصول للاشعارات، يرجي التحقق مت اتصالك بالانترنت واعادة المحاولة.</string>
+	<string name="msg_load">تحميل البيانات ،الرجاء الانتظار.</string>
+	<string name="load">تحميل \u0020</string>
+	<string name="wait">،الرجاء الانتظار\u0020</string>
+	<string name="Platinum">البلاتينية</string>
+	<string name="Gold">الذهبية</string>
+	<string name="Silver">الفضية</string>
+	<string name="Technology">التكنولوجيا</string>
+	<string name="Media">الإعلام</string>
+	<string name="home_para">إفنتريز كونفكس تجريبي هو أحد التطبيقات التي تشرح ملامح مستقبلك كونفكس للهاتف المحمول!
+
+		إفنتريز يقدم حالة سلس من الحل المحمول الفن، وكلها عرضت في تطبيق واحد واحد. تجربة البساطة والمستخدم من إفنتريز تطبيقات الهاتف المتحرك يجعل طلبها المتزايد ليس كل يوم، ولكن في كل ساعة!</string>
+	<string name="copyrights">تطبيقات افنتريز يحتوي على التعليمات البرمجية مفتوحة المصدر مرخص تحت رخصة أباتشي 2.0. لعرض نسخة من هذا المفتاح الترخيص هنا!</string>
+
+	<string name="reload">هل انت متأكد أنك تريد اعادة تحميل البيانات؟</string>
+	<string name="yes">إعادة التحميل</string>
+	<string name="no">إلغاء</string>
+</resources>

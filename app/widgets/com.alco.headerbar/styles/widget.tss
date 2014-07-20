@@ -1,0 +1,48 @@
+"#headerbar":{
+	top:0,
+	height: "50dp",
+	width: Ti.UI.FILL,
+	//backgroundColor: '#cacaca',
+	zIndex:999
+},
+"#headertitle": {
+	right: "60dp",
+	color: '#611F53',
+	font: {
+		fontSize: "18dp",
+		fontFamily: "Roboto"
+	},
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE
+},
+"#backbutton":{
+	right: "5dp",
+	width: "54dp",
+	height: "50dp",
+	backgroundColor: "transparent"
+},
+"#backangle":{
+	right: '0',
+	height: "20dp",
+	width: "20dp"
+},
+"#appicon":{
+	right: '21dp',
+	height: "30dp",
+	width: "30dp",
+	backgroundColor:'transparent'
+},
+"#bottomline":{
+	height: "2dp",
+	width: Ti.UI.FILL,
+	backgroundColor: "#0082AB",
+	bottom: "0"
+},
+"#actionButtons":{ // this button starts hidden
+	//left: "0dp",
+	width: Ti.UI.SIZE,
+	height: "50dp",
+	backgroundColor: "transparent",
+	visible: true,
+	layout: "horizontal"
+}

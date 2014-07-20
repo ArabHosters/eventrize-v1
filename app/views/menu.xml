@@ -1,0 +1,19 @@
+<Alloy>
+	<View id="menu">
+		<!-- 
+		<View id="profile_row">
+			<ImageView  />
+			<Label id="user_name" >
+		</View>	
+		-->
+		<ImageView image="/img/eventrize-bg.png" height="100dp" width="100%" />
+	    <ImageView class="sep" />
+	    <ImageView class="sep2" />
+        <TableView id="menu_table" />
+       <!--
+        <View id="footer">
+        	<Label id="eventrize">Powered By Eventrize ®</Label>        	
+        </View>
+        -->                                
+	</View>
+</Alloy>

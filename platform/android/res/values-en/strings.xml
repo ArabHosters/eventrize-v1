@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app">CSCAMP</string>
+    <string name="home_headertitle">What is CSCAMP ?</string>
+    <string name="home_para">CSCAMP is an application that demonestrates the features of your Future ConfEx Mobile App!
+
+Eventrize offers a seamless state-of-the-art mobile solution, all presented in one single application. The simplicity and user experience of the Eventrize mobile application makes its demand increasing not every day, but every hour!</string>
+    <string name="lang">English</string>
+    <string name="schedule_days">Days\u0020 :\u0020 </string>
+    <string name="scheduleDetails">Session\u0020 :</string>
+    <string name="copyrights">Eventrize apps contains open-source code licensed under the Apache Licence 2.0. To View copy of this license tab here !</string>
+    
+    <string name="Twitter_load">Fetching Tweets, Please wait ..\u0020 </string>
+    <string name="Twitter_header">Channels\u0020 : </string>
+    <string name="notf_load">Fetching Notifications, Please wait ..\u0020 </string>
+    <string name="notf_empty">There are no notifications currently !\u0020</string>
+    <string name="notf_toast">There was a problem fetching new notifications, Please check your connection and try again.</string>
+    <string name="msg_load">Downloading data, please wait ...\u0020</string>
+    <string name="load">Downloading\u0020 </string>
+    <string name="wait">\u0020, please wait ...\u0020</string>
+    <string name="Platinum">Platinum</string>
+    <string name="Gold">Gold</string>
+    <string name="Silver">Silver</string>
+    <string name="Technology">Technology</string>
+    <string name="Media">Media</string>
+    
+    
+	
+	
+	<string name="home">Home</string>
+	<string name="schedule">Schedule</string>
+	<string name="speakers">Speakers</string>
+	<string name="exhibitors">Exhibitors</string>
+	<string name="sponsors">Sponsors</string>
+	<string name="location">Venue</string>
+	<string name="notifications">Notifications</string>
+	<string name="twitter">Twitter</string>
+	
+	<string name="reload">Are you sure you want to Re-Download App Data</string>
+	<string name="yes">Re-Download</string>
+	<string name="no">Cancel</string>
+    
+</resources>

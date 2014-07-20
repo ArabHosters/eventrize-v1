@@ -1,0 +1,8 @@
+<Alloy>
+	<Window class="container" navBarHidden="true">	
+		<View id="indexcont" >	
+			<Widget src="com.alco.headerbar" id="headerbar"/>
+		</View>
+	</Window>
+</Alloy>
+
