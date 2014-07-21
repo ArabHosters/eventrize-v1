@@ -17,7 +17,8 @@ var Tabs = [];
 
 function doLoad(loadstatus){
 	loadstatus = typeof loadstatus !== 'undefined' ? loadstatus : loading;
-	//console.log(loadstatus);
+	//Alloy.Globals.Log(loadstatus);
+	
 	if(loadstatus){
 		loading=false;
 		$.loading.stop();
@@ -192,7 +193,7 @@ if(bearerToken == null){
 	    }
 	);
 } else {
-	Ti.API.info("We do have a bearer token...");
+	Alloy.Globals.Log("We do have a bearer token...");
 	cb.setBearerToken(bearerToken);
 	fetchTwitter();
 }
@@ -206,12 +207,12 @@ function fetchTwitter(){
 	        // ...
 	        
 	        
-	        //console.log(reply.statuses);
+	        //Alloy.Globals.Log(reply.statuses);
 	        var table = Ti.UI.createTableView({separatorColor:"transparent"});
 	        var tweets_rows = [];
 			var tweets = reply.statuses; 
 			_.each(tweets,function(tweet,sid){
-				//console.log(status);
+				//Alloy.Globals.Log(status);
 				
 				var srow = Ti.UI.createTableViewRow({
 					className:"status",
@@ -281,8 +282,8 @@ function fetchTwitter(){
 			news_views.push(table);
 			doLoad();
 	        $.contentView.add(news_views[0]);
-	        //Ti.API.info(reply.statuses[0]);
-	        console.log("success");
+	        //Alloy.Globals.Log(reply.statuses[0]);
+	        Alloy.Globals.Log("success");
 	    },
 	    true // this parameter required
 	);

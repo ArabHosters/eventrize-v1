@@ -79,7 +79,7 @@ if(social_list){
 	var social_left =0;
 	
 	
-	//console.log(social_list);
+	//Alloy.Globals.Log(social_list);
 	_.each(social_list, function(item) {
 		var social_img = Ti.UI.createImageView({
 			image:"/img/social/"+item.stack_title+".png",
@@ -96,7 +96,7 @@ if(social_list){
 		social_left=12;
 		
 		social_img.addEventListener("click",function(e){
-			//console.log(item.social_url);
+			//Alloy.Globals.Log(item.social_url);
 			
 			if(item.stack_title == "email"){
 				var emailDialog = Ti.UI.createEmailDialog();

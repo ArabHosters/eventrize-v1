@@ -315,3 +315,12 @@ for (var i=0; i<config.tabs.length;i++){
 
 
 
+
+Alloy.Globals.isDebug = true; 
+Alloy.Globals.Log= function (message){
+	if (Alloy.Globals.isDebug) {
+		Ti.API.info(message);
+	};
+}; 
+
+

@@ -19,7 +19,7 @@ currentSection.on('nav', sectionNav);
 
 
 function sectionNav(e) {
-	Ti.API.info('sectionNav');
+	Alloy.Globals.Log('sectionNav');
 	
 		
 		//sections[e.name] = Alloy.createController(e.name,e); -new

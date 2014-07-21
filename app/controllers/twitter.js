@@ -138,7 +138,7 @@ function generateRows(tweets){
 }
 
 function fetchTwitter(){
-	Ti.API.info('inside fetch twitter') ;
+	Alloy.Globals.Log('inside fetch twitter') ;
 	if(current_tab == "Timeline"){
 		cb.__call(
 			
@@ -147,7 +147,7 @@ function fetchTwitter(){
 		    {screen_name:"dsoftz"},
 		    //"q="+Ti.Network.encodeURIComponent("@dsoftz")+"&result_type=recent&count=30",
 		    function (reply) {
-		    	//console.log(reply);
+		    	//Alloy.Globals.Log(reply);
 		       	//var tweets = reply.statuses;
 		       	var tweets = reply; 
 				//configFile.write(JSON.stringify(tweets));
@@ -162,7 +162,7 @@ function fetchTwitter(){
 				doLoad(true);
 				
 				$.contentView.add(table);
-		        console.log("success");
+		        Alloy.Globals.Log("success");
 		       
 		    },
 		    true // this parameter required
@@ -173,7 +173,7 @@ function fetchTwitter(){
 		    'search_tweets',
 		    "q="+Ti.Network.encodeURIComponent("@dsoftz")+"&result_type=recent&count=30",
 		    function (reply) {
-		    	//console.log(reply);
+		    	//Alloy.Globals.Log(reply);
 		       	var tweets = reply.statuses;
 		       	//var tweets = reply; 
 				//configFile.write(JSON.stringify(tweets));
@@ -189,7 +189,7 @@ function fetchTwitter(){
 				doLoad(true);
 				
 				$.contentView.add(table);
-		        console.log("success");
+		        Alloy.Globals.Log("success");
 		       
 		    },
 		    true // this parameter required
@@ -201,7 +201,7 @@ function fetchTwitter(){
 
 function doLoad(loadstatus){
 	loadstatus = typeof loadstatus !== 'undefined' ? loadstatus : loading;
-	//console.log(loadstatus);
+	//Alloy.Globals.Log(loadstatus);
 	if(loadstatus){
 		loading=false;
 		$.loading.stop();

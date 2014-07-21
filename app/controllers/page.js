@@ -28,7 +28,7 @@
 		social_left+=24;
 		
 		social_img.addEventListener("click",function(e){
-			console.log(item.value);
+			Alloy.Globals.Log(item.value);
 			if(item.type == "email"){
 				var emailDialog = Ti.UI.createEmailDialog();
 				emailDialog.subject = "[Contact Form] Via EgyptOn App";

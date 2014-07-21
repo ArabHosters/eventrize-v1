@@ -31,7 +31,7 @@
 var rc = MapModule.isGooglePlayServicesAvailable();
 switch (rc) {
     case MapModule.SUCCESS:
-        Ti.API.info('Google Play services is installed.');
+        Alloy.Globals.Log('Google Play services is installed.');
         break;
     case MapModule.SERVICE_MISSING:
         alert('Google Play services is missing. Please install Google Play services from the Google Play store.');

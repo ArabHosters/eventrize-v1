@@ -107,7 +107,7 @@ $.schedule.on('click', function() {
 
 $.speakers.on('click', function() {
 	Alloy.Globals.ref = null ;
-	Ti.API.info('name '+$.speakers.name) ;
+	Alloy.Globals.Log('name '+$.speakers.name) ;
 	doTab($.speakers.name, tabPositions.speakers);
 });
 

@@ -17,7 +17,7 @@ if(social_list){
 	var social_left =0;
 	
 	
-	//console.log(social_list);
+	//Alloy.Globals.Log(social_list);
 	_.each(social_list, function(item) {
 		var social_img = Ti.UI.createImageView({
 			image:"/images/"+item.stack_title+".png",
@@ -33,7 +33,7 @@ if(social_list){
 		social_left+=24;
 		
 		social_img.addEventListener("click",function(e){
-			console.log(item.social_url);
+			Alloy.Globals.Log(item.social_url);
 			if(item.stack_title == "email"){
 				var emailDialog = Ti.UI.createEmailDialog();
 				emailDialog.subject = "[Contact Form] Via EgyptOn App";
@@ -152,7 +152,7 @@ HeaderView = function(options) {
 	
 	self.on("change",function(e){
 		for (var i=0, l=exTabs.length; i<l; i++) {
-			//console.log(exTabs[i].id);
+			//Alloy.Globals.Log(exTabs[i].id);
 			if(e.selection != exTabs[i].id)
 				exTabs[i].children[0].color = "white";
 		}
@@ -185,17 +185,17 @@ HeaderView = function(options) {
 	$.headerView.on('change', function(e) {
 		if (e.selection === 'Background') {
 			//$.agendaTable.setData(sunday);
-			console.log("background");
+			Alloy.Globals.Log("background");
 			$.bio.setText(exbackground);
 		}
 		else if (e.selection === 'Services') {
 			//$.agendaTable.setData(monday);
-			console.log("services");
+			Alloy.Globals.Log("services");
 			$.bio.setText(exservices);
 		}
 		else {
 			//$.agendaTable.setData(tuesday);
-			console.log("contact");
+			Alloy.Globals.Log("contact");
 			$.bio.setText(excontact);
 		}
 		$.contentView.scrollTo(0,0);

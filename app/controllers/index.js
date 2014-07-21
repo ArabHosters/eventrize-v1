@@ -1,3 +1,7 @@
+Alloy.Globals.Log("test log ");
+
+
+
 Alloy.Globals.AppTitle = L('app');
 // Require in the module
 //var CloudPush = require('ti.cloudpush');
@@ -8,17 +12,17 @@ var deviceToken = null;
 function deviceTokenSuccess(e) {
 	CloudPush.enabled = true;
 	deviceToken = e.deviceToken;
-	//console.log(deviceToken);
+	//Alloy.Globals.Log(deviceToken);
 
 	if (!User.confirmLogin()) {
-		//console.log("not logged");
+		//Alloy.Globals.Log("not logged");
 		User.login('mob@fixedmea.com', '?}^3Fwx82y4Ecg8T{=vU', deviceToken, function(e) {
 			//success login
-			console.log("cloudpush loggedin");
+			Alloy.Globals.Log("cloudpush loggedin");
 		}, function(e) {
 			// error
-			console.log("cloudpush failed to login");
-			console.log(e);
+			Alloy.Globals.Log("cloudpush failed to login");
+			Alloy.Globals.Log(e);
 		});
 	}
 }
@@ -211,7 +215,8 @@ function getExtraButtons() {
 			action : function() {
 				var opts = {
 				options : ['English','العربية'],
-				title : L('lang')
+				title : L('lang'),
+				selectedIndex:Alloy.Globals.currentLang =='en'?0:1
 				};
 				var dialog = Ti.UI.createOptionDialog(opts);
 				dialog.show();
@@ -349,8 +354,8 @@ function start(force) {
 	//it shows loading
 
 	if (cache.size == 0 || force) {
-		Ti.API.info('cash is empty ');
-		console.log("need to load data when cash size is 0");
+		Alloy.Globals.Log('cash is empty ');
+		Alloy.Globals.Log("need to load data when cash size is 0");
 		Alloy.Globals.current = mainCont;
 
 		downloadQueue = {}, xhrRequest = {}, xhrCount = {};
@@ -371,7 +376,7 @@ function start(force) {
 		xhr.send();
 
 	} else {
-		console.log("data already loaded ,and  show time runs ");
+		Alloy.Globals.Log("data already loaded ,and  show time runs ");
 		Alloy.Globals.jsonData = JSON.parse(cache.read());
 		show_time(0);
 	}
@@ -401,7 +406,7 @@ function loadData(e) {
 	//get exhibitors photos
 	for ( i = 0; i < exhibitors.length; i++) {
 		downloadQueue.exhibitors.push(exhibitors[i].exhibitor_image);
-		//console.log(exhibitors[i].exhibitor_website);
+		//Alloy.Globals.Log(exhibitors[i].exhibitor_website);
 
 		data.exhibitors[i].exhibitor_social.unshift({
 			stack_title : "website",
@@ -421,10 +426,10 @@ function loadData(e) {
 	}
 	*/
 
-	//console.log(downloadQueue);
+	//Alloy.Globals.Log(downloadQueue);
 
 	//loadthenextFile("sponsors");
-	Ti.API.info('is it looping ');
+	Alloy.Globals.Log('is it looping ');
 	loadthenextFile(down_start);
 	$.loading.setMessage(L('sponsors'));
 
@@ -446,13 +451,13 @@ function error(e) {
 }
 
 function loadthenextFile(type) {
-	//console.log(downloadQueue[type]);
+	//Alloy.Globals.Log(downloadQueue[type]);
 
 	if (xhrCount[type] > 0) {
 		downloadQueue[type][xhrCount - 1] == null;
 	}
 
-	Ti.API.info('loadthenextFile type: ' + type);
+	Alloy.Globals.Log('loadthenextFile type: ' + type);
 
 	if (xhrCount[type] < downloadQueue[type].length) {
 		var fileUrl = downloadQueue[type][xhrCount[type]];
@@ -515,8 +520,7 @@ function retrieveData(params) {
 
 function SaveFile(foldername, filename, response, index, type) {
 
-	//Ti.API.info(response.type);
-	//Ti.API.info(foldername + "/" + filename);
+	
 
 	if (response.type == 1) {
 		var f = Ti.Filesystem.getFile(response.nativePath);

@@ -2,7 +2,7 @@
  
 function loadthenextFile(type)
 {
-	//console.log(downloadQueue[type]);
+	//Alloy.Globals.Log(downloadQueue[type]);
 	
     if (xhrCount[type] > 0){
         downloadQueue[type][xhrCount - 1] == null;
@@ -60,8 +60,8 @@ function retrieveData(params)
  
 function SaveFile(foldername, filename, response,index,type){
  
-    Ti.API.info(response.type);
-    Ti.API.info(foldername + "/" + filename);
+    Alloy.Globals.Log(response.type);
+    Alloy.Globals.Log(foldername + "/" + filename);
  	$.loading.setMessage(filename);
     if (response.type == 1){
         var f = Ti.Filesystem.getFile(response.nativePath);

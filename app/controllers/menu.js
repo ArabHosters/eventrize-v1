@@ -21,7 +21,7 @@ MenuRow = function(params){
 	//var micon = params.item.icon;
 	
 	var micon = (params.index == 0)?mcont+"-pressed":mcont;
-	Ti.API.info('micon: '+micon);
+	Alloy.Globals.Log('micon: '+micon);
 	var mcolor = (params.index == 0)?Alloy.Globals.menuConf.mcolor1:Alloy.Globals.menuConf.mcolor0;
 	
 	var row = $.UI.create('TableViewRow',{
@@ -118,7 +118,7 @@ $.menu_table.on('click',function(e){
 	old_row.children[0].children[1].color = Alloy.Globals.menuConf.mcolor0;
 	
 	// new row pressed
-	Ti.API.info("/img/icons/"+item+"-pressed.png");
+	Alloy.Globals.Log("/img/icons/"+item+"-pressed.png");
 	e.row.children[0].children[0].image = "/img/icons/"+item+"-pressed.png";
 	e.row.children[0].children[1].color = Alloy.Globals.menuConf.mcolor1;
 	

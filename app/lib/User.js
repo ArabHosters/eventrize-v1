@@ -41,9 +41,9 @@ User.login = function(username, password,deviceToken, success, error) {
 			    device_token: deviceToken
 			}, function (e) {
 			    if (e.success) {
-			        //console.log('Subscribe Success');
+			        //Alloy.Globals.Log('Subscribe Success');
 			    } else {
-			        //console.log('Subscribe Error:\n' +((e.error && e.message) || JSON.stringify(e)));
+			        //Alloy.Globals.Log('Subscribe Error:\n' +((e.error && e.message) || JSON.stringify(e)));
 			    }
 			});
 			
