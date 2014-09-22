@@ -5,6 +5,10 @@
     <string name="home_para">CSCAMP is an application that demonestrates the features of your Future ConfEx Mobile App!
 
 Eventrize offers a seamless state-of-the-art mobile solution, all presented in one single application. The simplicity and user experience of the Eventrize mobile application makes its demand increasing not every day, but every hour!</string>
+    
+    <string name="ctf_para">Capture The Flag</string>
+    <string name="training_para">Training</string>
+    
     <string name="lang">English</string>
     <string name="schedule_days">Days\u0020 :\u0020 </string>
     <string name="scheduleDetails">Session\u0020 :</string>
@@ -35,6 +39,8 @@ Eventrize offers a seamless state-of-the-art mobile solution, all presented in o
 	<string name="location">Venue</string>
 	<string name="notifications">Notifications</string>
 	<string name="twitter">Twitter</string>
+	<string name="ctf">CTF</string>
+	<string name="training">Training</string>
 	
 	<string name="reload">Are you sure you want to Re-Download App Data</string>
 	<string name="yes">Re-Download</string>

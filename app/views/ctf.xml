@@ -1,0 +1,21 @@
+<Alloy>
+	<View id="ctf">
+		
+		<ImageView id="eventrize" image="/img/eventrize-logo.png" top="0" bottom="10dp" left="10dp" right="10dp" height="30%"></ImageView>
+		<View top="30%" bottom="10dp" left="10dp" right="10dp" width="Ti.UI.SIZE" height="Ti.UI.SIZE" backgroundColor="transparent"  zIndex="3" layout="vertical" >
+			<View id="social" top="10dp" height="Ti.UI.SIZE" >
+				<ImageView id="swfacebook" width="24dp" height="24dp" image="/img/social/facebook-blue.png" />
+				<ImageView id="swtwitter" width="24dp" height="24dp" left="18dp" image="/img/social/twitter-blue.png" />
+				<ImageView id="swwebsite" width="24dp" height="24dp" left="18dp" image="/img/social/website-blue.png" />
+			</View>
+			<ScrollView id="content" layout="vertical" top="10dp">
+				<!--Label class="headertitle">About Eventrize ?</Label-->
+				<Label id="para" class="para" ></Label>
+				<Label id="copyrights" class="para" top="10dp"> </Label>
+							</ScrollView>
+		</View>
+		
+		<View top="30%" bottom="10dp" left="10dp" right="10dp" width="Ti.UI.FILL" height="Ti.UI.FILL" backgroundColor="white" zIndex="2" opacity="0.7"></View>
+	</View>	
+</Alloy>
+
