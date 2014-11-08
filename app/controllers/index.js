@@ -4,7 +4,7 @@ Alloy.Globals.Log("test log ");
 
 Alloy.Globals.AppTitle = L('app');
 // Require in the module
-//var CloudPush = require('ti.cloudpush');
+var CloudPush = require('ti.cloudpush');
 var User = require('User');
 var deviceToken = null;
 // Enable push notifications for this device
@@ -35,7 +35,7 @@ Alloy.Globals.no_updates = 1;
 // Process incoming push notifications
 
 
-//Alloy.Globals.Map = require('ti.map');
+Alloy.Globals.Map = require('ti.map');
 
 // data format
 

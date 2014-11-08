@@ -1,4 +1,4 @@
-/*
+
 	var event = Alloy.Globals.jsonData.custom_fields;
 	var gmap = event.info_gmap;
 	var lat= gmap.substr(0,gmap.indexOf(","));
@@ -50,4 +50,3 @@ switch (rc) {
         break;
 }
 		
-*/

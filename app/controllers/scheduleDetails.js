@@ -23,7 +23,7 @@ Alloy.Globals.ref ="sdetails";
 		
 
 	
-	var scheduleTabsTitles = ['Info', 'Speakers'];// , 'Feedback'];//,'Ask']; 
+var scheduleTabsTitles = ['Info', 'Speakers'];// , 'Feedback'];//,'Ask']; 
 	
 
 	

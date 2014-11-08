@@ -10,6 +10,8 @@ var currentTab = 0 ;
 
 Alloy.Globals.ref ="";
 
+
+
 // setting up days data
 _.each(schedule,function(item,day){
 	var day_sessions=[];
@@ -32,19 +34,21 @@ _.each(schedule,function(item,day){
 			rightImage:"/img/schedule/"+session_type+".png",			
 			color:"black",
 			ssid:sid,
-			key:day
+			key:day,
+			height:Ti.UI.SIZE
 		});
 				
 		var scontent = Ti.UI.createView({
 			//layout:"horizontal",
 			width:"100%",
-			height:"60dp"
+			height:Ti.UI.SIZE,
+			top:10
 		});
 		var stime = Ti.UI.createLabel({
 			text:session.session_starttime,
 			color:Alloy.Globals.schedule.stimeColor,
 			height:Ti.UI.FILL,
-			width:"30%",
+			//width:"30%",
 			textAlign:"right",
 			right:"10dp",
 			font:{
@@ -54,36 +58,42 @@ _.each(schedule,function(item,day){
 			verticalAlign:Ti.UI.TEXT_VERTICAL_ALIGNMENT_CENTER
 		});
 		
+		
+		
 		var stitle = Ti.UI.createLabel({
-			text:session.session_title,
-			textAlign:"right",
+			html:session.session_title+"<br>By: "+session.session_speakers[0].speaker_name+"<br>At: "+session.session_location,
+			textAlign:"left",
 			color:Alloy.Globals.schedule.stitleColor,
 			font:{
 				fontWeight:"bold",
 				fontSize:Alloy.Globals.schedule.stitleSize+'dp'
 			},			
 			height:Ti.UI.FILL,
-			width:Ti.UI.SIZE,
-			right:"33%",
+			width:"73%",
+			//right:"33%",
+			left:10,
 			verticalAlign:Ti.UI.TEXT_VERTICAL_ALIGNMENT_CENTER
 			
 		});
 		
 		var sbar = Ti.UI.createView({
-			width:"80%",
-			left:"10%",
-			backgroundColor:Alloy.Globals.schedule.sbarColor,
-			height:"1dp"
-		});
-		
+		width:"80%",
+		left:"10%",
+		backgroundColor:Alloy.Globals.PersonRowConf.sbarColor,
+		height:"1dp",
+		top:"10dp"
+	});
 		
 		scontent.add(stitle);
 		scontent.add(stime);
 		
 		
+		
 		srow.add(scontent);
-		if(sid < item.length-1)
-			srow.add(sbar);		
+		Ti.API.info(sid +"   "+item.length -1);
+		if(sid < item.length -1){
+		
+			srow.add(sbar);		}
 		
 		day_sessions.push(srow);
 	});
@@ -99,6 +109,8 @@ _.each(schedule,function(item,day){
 	
 	
 table.addEventListener("click",function(e){
+	
+	
 	var data = {
 		name:"scheduleDetails",
 		type:'',

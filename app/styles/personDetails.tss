@@ -93,6 +93,15 @@
 	width:"96%"
 },
 
+
+'#tabbar':{	
+	top:"1%",
+	height:"10%",
+	left:"2%",
+	width:"96%",
+	//borderColor:"red", borderWidth:1
+}
+
 '#pagecontent':{
 	backgroundColor:Alloy.Globals.personDetails.pagecontentBG,
 	top:0,

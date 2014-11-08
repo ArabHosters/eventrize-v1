@@ -16,11 +16,12 @@
 		
 			<View id="horBar"  />
 			
+			<View id="tabbar" />
 			
 			<View id="pagecontent">
 				
 				<ScrollView id="contentView">
-					<Label id="bio" />
+					<!--<Label id="bio" />-->
 				</ScrollView>
 				
 			</View> <!-- page content -->

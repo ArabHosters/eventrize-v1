@@ -127,3 +127,27 @@ $.setTab = function(name) {
 Ti.App.addEventListener("app:menu_click",function(e){
 	$.setTab(e.item); 
 });
+
+Ti.App.addEventListener("aspeaker",function(e){
+	
+	var name =$.schedule.name; 
+	_.each(names, function(item) { 
+				if (name === $[item].name) 
+				{
+					
+					$[item+'Icon'].image = '/img/icons/'+$[item].name+'-pressed.png';
+					$[item+'Label'].color = '#e87731';
+				}
+				else 
+				{
+					$[item+'Icon'].image = '/img/icons/'+$[item].name+'.png';
+					$[item+'Label'].color = '#000';
+				}
+				
+		});
+		
+		Alloy.Globals.setABTitle({text:L(name),color:"#611F53"});
+	
+});
+
+
