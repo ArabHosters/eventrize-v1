@@ -146,7 +146,7 @@ _.each(schedule,function(item,key){
 
 
 // the header 
-var speakerTabsTitles = ['Bio', 'Sessions'];
+var speakerTabsTitles = [ 'Sessions','Bio'];
 
 tabView =	Alloy.Globals.HeaderView({
 			title:"Speaker:",
@@ -157,10 +157,7 @@ tabView =	Alloy.Globals.HeaderView({
 
 speakerViews = [];
 
-// ----------------- Bio View ------------------
-	var bioView= Alloy.createController('schedule/sessionInfo').getView();
-	bioView.html= data[df[data_type].bio];
-	speakerViews.push(bioView);
+
 // ----------------- Sessions View ------------------
 	var sessionsView = Alloy.createController('schedule/sessionSpeakers').getView();
 
@@ -208,7 +205,7 @@ speakerViews = [];
 		
 		
 		var stitle = Ti.UI.createLabel({
-			html:session.session_title+"<br>By: "+session.session_speakers[0].speaker_name+"<br>At: "+session.session_location,
+			html:session.session_title+"<br>By: "+session.session_speakers[0].speaker_name+"<br>Location: "+session.session_location,
 			textAlign:"left",
 			color:Alloy.Globals.schedule.stitleColor,
 			font:{
@@ -249,6 +246,12 @@ speakerViews = [];
 
 	sessionsView.setData(session_rows); // add rows to the table 
 	speakerViews.push(sessionsView);   // add the view to views that will be in the tab
+
+// ----------------- Bio View ------------------
+	var bioView= Alloy.createController('schedule/sessionInfo').getView();
+	bioView.html= data[df[data_type].bio];
+	speakerViews.push(bioView);
+
 
 	sessionsView.addEventListener("click",function(e){
 	

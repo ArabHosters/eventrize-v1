@@ -61,7 +61,7 @@ _.each(schedule,function(item,day){
 		
 		
 		var stitle = Ti.UI.createLabel({
-			html:session.session_title+"<br>By: "+session.session_speakers[0].speaker_name+"<br>At: "+session.session_location,
+			html:session.session_title+"<br>By: "+session.session_speakers[0].speaker_name+"<br>Location: "+session.session_location,
 			textAlign:"left",
 			color:Alloy.Globals.schedule.stitleColor,
 			font:{

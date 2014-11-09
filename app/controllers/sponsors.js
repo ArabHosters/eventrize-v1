@@ -4,46 +4,7 @@ var args = arguments[0];
 var data_type = args.type;
 var index = args.index;
 
-//var data = Alloy.Globals.jsonData[df[data_type].jsonindex];
-
-var data = [
-{
-"sponsor_name": "Education Sponsor",
-"sponsor_website": "www.isc2.org",
-"sponsor_info": "",
-"sponsor_image": "http://www.eventrize.com/cscamp/wp-content/uploads/sites/11/2014/07/isc2.png",
-"sponsor_id": 13,
-"sponsor_category": "Platinum"
-},{
-"sponsor_name": "Education Sponsor",
-"sponsor_website": "www.isc2.org",
-"sponsor_info": "",
-"sponsor_image": "http://www.eventrize.com/cscamp/wp-content/uploads/sites/11/2014/07/isc2.png",
-"sponsor_id": 13,
-"sponsor_category": "Platinum"
-},{
-"sponsor_name": "Education Sponsor",
-"sponsor_website": "www.isc2.org",
-"sponsor_info": "",
-"sponsor_image": "http://www.eventrize.com/cscamp/wp-content/uploads/sites/11/2014/07/isc2.png",
-"sponsor_id": 13,
-"sponsor_category": "Platinum"
-},{
-"sponsor_name": "Education Sponsor",
-"sponsor_website": "www.isc2.org",
-"sponsor_info": "",
-"sponsor_image": "http://www.eventrize.com/cscamp/wp-content/uploads/sites/11/2014/07/isc2.png",
-"sponsor_id": 13,
-"sponsor_category": "cook"
-},{
-"sponsor_name": "Education Sponsor",
-"sponsor_website": "www.isc2.org",
-"sponsor_info": "",
-"sponsor_image": "http://www.eventrize.com/cscamp/wp-content/uploads/sites/11/2014/07/isc2.png",
-"sponsor_id": 13,
-"sponsor_category": "cook"
-}
-];
+var data = Alloy.Globals.jsonData[df[data_type].jsonindex];
 
 function PersonRow(person, pid) {
 
