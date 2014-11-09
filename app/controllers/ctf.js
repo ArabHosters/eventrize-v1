@@ -4,7 +4,9 @@ if (Alloy.Globals.currentLang == 'en') {
 } else {
 	
 }
-$.para.text = L('ctf_para');
+$.para.html = Alloy.Globals.jsonData.CTF;
+
+Ti.API.info('CTF: '+Alloy.Globals.jsonData.CTF);
 $.eventrize.addEventListener("click",function(e){
 	Ti.Platform.openURL("http://eventrize.com");
 });

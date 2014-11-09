@@ -348,6 +348,40 @@ Ti.App.addEventListener('app:open.menu', function(e) {
 });
 
 $.index.open();
+
+//CTF 
+		
+		var CTFxhr = Ti.Network.createHTTPClient({
+			onload : function(e){
+				Ti.API.info('CTF xhr ');
+				var CTFData = JSON.parse(this.responseText).page.content;
+				Ti.API.info(CTFData);
+				
+				Alloy.Globals.jsonData.CTF = CTFData;
+			},
+			timeout : 10000
+		});
+		CTFxhr.open("GET", "http://www.eventrize.com/cscamp/api/get_page/?slug=ctf");
+		//CTFxhr.send();
+		
+		
+		//
+		
+		//Training 
+		
+		var Trainingxhr = Ti.Network.createHTTPClient({
+			onload : function(e){
+				Ti.API.info('Training xhr ');
+				var TrainingData = JSON.parse(this.responseText).page.content;
+				Ti.API.info(TrainingData);
+				Alloy.Globals.jsonData.Training = TrainingData;
+			},
+			timeout : 10000
+		});
+		Trainingxhr.open("GET", "http://www.eventrize.com/cscamp/api/get_page/?slug=training");
+		//Trainingxhr.send();
+		
+
 function start(force) {
 
 	doLoad(0);
@@ -374,6 +408,8 @@ function start(force) {
 		});
 		xhr.open("GET", url);
 		xhr.send();
+		
+		//
 
 	} else {
 		Alloy.Globals.Log("data already loaded ,and  show time runs ");
@@ -434,6 +470,8 @@ function loadData(e) {
 	$.loading.setMessage(L('sponsors'));
 
 	Alloy.Globals.jsonData = data;
+	CTFxhr.send();
+	Trainingxhr.send();
 
 }
 

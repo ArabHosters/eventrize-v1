@@ -4,7 +4,7 @@ if (Alloy.Globals.currentLang == 'en') {
 } else {
 	
 }
-$.para.text = L('training_para');
+$.para.html = Alloy.Globals.jsonData.Training;
 $.eventrize.addEventListener("click",function(e){
 	Ti.Platform.openURL("http://eventrize.com");
 });
