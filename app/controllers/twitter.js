@@ -6,7 +6,7 @@ var current_tab = "Timeline";
 var Codebird = require("codebird");
 var cb = new Codebird();
 cb.setConsumerKey('S4JMPxJwo8dus30SX09w', 'ZzHqiUZj3MAHpa3HfLLChjQEcDPCfVo4HACFZwpqvQ');
-var news_titles = ["@Bluekaizen Timeline","#CSCamp2014 Tweets"];
+var news_titles = ["@Bluekaizen Timeline","#CSCamp2015 Tweets"];
 var news_views = [];
 var Tabs = []; 
 var table,tweets_rows,bearerToken;
@@ -171,7 +171,7 @@ function fetchTwitter(){
 		cb.__call(
 			
 		    'search_tweets',
-		    "q="+Ti.Network.encodeURIComponent("#CSCAMP2014"),//+"&result_type=recent&count=30",
+		    "q="+Ti.Network.encodeURIComponent("#CSCAMP2015"),//+"&result_type=recent&count=30",
 		    function (reply) {
 		    	Alloy.Globals.Log(JSON.stringify(reply));
 		       	var tweets = reply.statuses;

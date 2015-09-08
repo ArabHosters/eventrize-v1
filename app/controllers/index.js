@@ -443,11 +443,14 @@ function loadData(e) {
 	for ( i = 0; i < exhibitors.length; i++) {
 		downloadQueue.exhibitors.push(exhibitors[i].exhibitor_image);
 		//Alloy.Globals.Log(exhibitors[i].exhibitor_website);
+		 try{
 
 		data.exhibitors[i].exhibitor_social.unshift({
 			stack_title : "website",
 			social_url : exhibitors[i].exhibitor_website
-		});
+		});}catch(e){
+			
+		}
 
 	}
 	/*

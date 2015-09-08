@@ -10,8 +10,8 @@
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
     <navbar-hidden>true</navbar-hidden>
-    <analytics>true</analytics>
-    <guid>a3935e7d-b5a2-4cf2-b806-0002e0677cd4</guid>
+    <analytics>false</analytics>
+    <guid>92bd1146-7f49-47b1-9fff-ace31472e1f3</guid>
     <property name="ti.ui.defaultunit" type="string">dp</property>
     <property name="ti.android.bug2373.disableDetection">true</property>
     <property name="ti.android.bug2373.finishfalseroot" type="bool">false</property>
@@ -41,7 +41,6 @@
         </plist>
     </ios>
     <android xmlns:android="http://schemas.android.com/apk/res/android">
-        <tool-api-level>17</tool-api-level>
         <manifest>
             <!-- Allows the API to download data from Google Map servers -->
             <uses-permission android:name="android.permission.INTERNET"/>
@@ -60,12 +59,12 @@
             <uses-permission android:name="com.fixedsolutions.cairosecuritycamp.permission.MAPS_RECEIVE"/>
             <permission
                 android:name="com.fixedsolutions.cairosecuritycamp.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
-            <application android:theme="@style/LightTheme">
+            <application android:theme="@style/Theme.AppCompat.Translucent.NoTitleBar.Fullscreen">
                 <meta-data
                     android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDbJA4jjvxBhg1vJhX2FoFS9aoiZLo9-u0"/>
             </application>
             <supports-screens android:anyDensity="true"/>
-            <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="17"/>
+            <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="21"/>
         </manifest>
     </android>
     <mobileweb>
@@ -79,20 +78,21 @@
     <modules>
         <module platform="iphone">com.shareourideas.locale</module>
         <module platform="android" version="0.1">com.shareourideas.locale</module>
-        <module platform="commonjs" version="3.2.2">ti.cloud</module>
-        <module platform="android" version="3.2.1">ti.cloudpush</module>
-        <module platform="android" version="2.1.3">ti.map</module>
+        <module platform="commonjs">ti.cloud</module>
+        <module platform="android">ti.cloudpush</module>
+        <module platform="android">ti.map</module>
     </modules>
     <deployment-targets>
         <target device="iphone">false</target>
         <target device="ipad">false</target>
         <target device="android">true</target>
         
-        
+        <target device="mobileweb">false</target>
         
     </deployment-targets>
-    <sdk-version>3.4.0.GA</sdk-version>
+    <sdk-version>4.1.0.GA</sdk-version>
     <plugins>
         <plugin version="1.0">ti.alloy</plugin>
     </plugins>
+    <property name="appc-app-id" type="string">55edb1921b62980c2363d758</property>
 </ti:app>
