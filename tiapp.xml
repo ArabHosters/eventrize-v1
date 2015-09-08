@@ -76,7 +76,7 @@
         <theme>default</theme>
     </mobileweb>
     <modules>
-        <module platform="iphone">com.shareourideas.locale</module>
+        <module platform="iphone" version="0.1">com.shareourideas.locale</module>
         <module platform="android" version="0.1">com.shareourideas.locale</module>
         <module platform="commonjs">ti.cloud</module>
         <module platform="android">ti.cloudpush</module>
@@ -86,7 +86,6 @@
         <target device="iphone">false</target>
         <target device="ipad">false</target>
         <target device="android">true</target>
-        
         <target device="mobileweb">false</target>
         
     </deployment-targets>

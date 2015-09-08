@@ -13,20 +13,20 @@ var exTabs = [];
 var currentTab = 0;
 
 Alloy.Globals.ref = "";
-
+Ti.API.info(JSON.stringify(schedule));
 // setting up days data
 _.each(schedule, function(item, day) {
-	var day_sessions = [];
+	try {
+		var day_sessions = [];
 
-	var d = new Date(parseInt(item[0].session_startdate) * 1000);
-	days.push(d);
-	days_titles.push(dnames[d.getDay()] + " " + d.getDate());
-	var table = Ti.UI.createTableView({
-		separatorColor : "transparent"
-	});
+		var d = new Date(parseInt(item[0].session_startdate) * 1000);
+		days.push(d);
+		days_titles.push(dnames[d.getDay()] + " " + d.getDate());
+		var table = Ti.UI.createTableView({
+			separatorColor : "transparent"
+		});
 
-	_.each(item, function(session, sid) {
-		try {
+		_.each(item, function(session, sid) {
 
 			session_type = session.session_type == "other_session" ? session.session_type_other : session.session_type;
 
@@ -98,36 +98,38 @@ _.each(schedule, function(item, day) {
 
 			day_sessions.push(srow);
 
-		} catch(e) {
-		}
-	});
+		});
 
-	table.setData(day_sessions);
+		table.setData(day_sessions);
 
-	days_views.push(table);
-	if (today == day)
-		filled = dayindex;
+		days_views.push(table);
+		if (today == day)
+			filled = dayindex;
 
-	dayindex++;
+		dayindex++;
 
-	table.addEventListener("click", function(e) {
+		table.addEventListener("click", function(e) {
 
-		var data = {
-			name : "scheduleDetails",
-			type : '',
-			index : e.row.ssid,
-			day : e.row.key
-		};
-		Alloy.Globals.currentrow = e.row.ssid;
-		Alloy.Globals.currentday = e.row.key;
+			var data = {
+				name : "scheduleDetails",
+				type : '',
+				index : e.row.ssid,
+				day : e.row.key
+			};
+			Alloy.Globals.currentrow = e.row.ssid;
+			Alloy.Globals.currentday = e.row.key;
 
-		Alloy.Globals.currentSection.trigger("nav", data);
-	});
+			Alloy.Globals.currentSection.trigger("nav", data);
+		});
 
+	} catch(e) {
+	}
 });
 
-$.contentView.add(days_views[filled]);
-
+try {
+	$.contentView.add(days_views[filled]);
+} catch(e) {
+}
 $.headerView = Alloy.Globals.HeaderView({
 	title : L('schedule_days'),
 	optionWidth : 25,

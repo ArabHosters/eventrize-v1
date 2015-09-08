@@ -3,8 +3,8 @@
 			"ar": "false",
 			"en": "true"
 		},
-	"APIURL":"http://www.eventrize.com/cscamp/api/events/get_event/?id=4",
-	"NotificationsURL":"http://dev.eventrize.com/demo/api/notifications/get_notifications/",
+	"APIURL":"http://www.eventrize.com/cscamp/api/events/get_event/?id=180",
+	"NotificationsURL":"http://www.eventrize.com/cscamp/api/notifications/get_notifications/",
 	"HbColor":"#611F53",
 	"HvColor":"#611F53",
 	"home": {
