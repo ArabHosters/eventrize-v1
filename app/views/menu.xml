@@ -6,7 +6,7 @@
 			<Label id="user_name" >
 		</View>	
 		-->
-		<ImageView image="/img/eventrize-bg.png" height="100dp" width="100%" />
+		<!-- <ImageView image="/img/eventrize-bg.png" visible="false"  width="100%" /> -->
 	    <ImageView class="sep" />
 	    <ImageView class="sep2" />
         <TableView id="menu_table" />

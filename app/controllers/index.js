@@ -1,6 +1,6 @@
 Alloy.Globals.Log("test log ");
 
-
+$.index.orientationModes=[Titanium.UI.PORTRAIT];
 
 Alloy.Globals.AppTitle = L('app');
 // Require in the module

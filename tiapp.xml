@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <id>com.fixedsolutions.cairosecuritycamp</id>
+    <id>com.rizeinno.cscamp2015</id>
     <name>cairosecuritycamp</name>
     <version>1.0</version>
     <publisher>podo</publisher>
@@ -87,7 +87,6 @@
         <target device="ipad">false</target>
         <target device="android">true</target>
         <target device="mobileweb">false</target>
-        
     </deployment-targets>
     <sdk-version>4.1.0.GA</sdk-version>
     <plugins>
