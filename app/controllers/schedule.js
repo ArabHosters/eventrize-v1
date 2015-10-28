@@ -54,7 +54,7 @@ _.each(schedule, function(item, day) {
 				height : Ti.UI.FILL,
 				//width:"30%",
 				textAlign : "right",
-				right : "10dp",
+				right : 10,
 				font : {
 					fontWeight : "bold",
 					fontSize : Alloy.Globals.schedule.stimeSize + 'dp'
@@ -82,8 +82,8 @@ _.each(schedule, function(item, day) {
 				width : "80%",
 				left : "10%",
 				backgroundColor : Alloy.Globals.PersonRowConf.sbarColor,
-				height : "1dp",
-				top : "10dp"
+				height : 1,
+				top : 10
 			});
 
 			scontent.add(stitle);

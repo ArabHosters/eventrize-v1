@@ -1,6 +1,6 @@
 "Label": {
  	font:{
-		fontSize:'18dp',		
+		fontSize:18,		
 	},
 	top:0,
 	color:"#000",

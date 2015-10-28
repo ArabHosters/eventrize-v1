@@ -7,22 +7,22 @@
 },
 ".headertitle":{
 	font:{
-		fontSize:"24dp",		
+		fontSize:24,		
 	},
 	color:"#257FCE",
-	top:"10dp"
+	top:10
 }
 ,
 ".para":{
 	color:"black",
 	textAlign:"right",
 	font:{
-		fontSize:"18dp"
+		fontSize:18
 	}
 }
 ,
 "#content":{
-	left:"10dp",
-	right:"10dp"
+	left:10,
+	right:10
 }
 

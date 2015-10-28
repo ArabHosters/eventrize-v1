@@ -1,13 +1,13 @@
 '#container': {
 	opacity:1,
 	left:0,
-	top:"50dp",
+	top:50,
 	width:"100%"
 },
 
 '#content': {
 	top:0,
 	height:Ti.UI.FILL,
-	bottom:'56dp'
+	bottom:56
 	
 }

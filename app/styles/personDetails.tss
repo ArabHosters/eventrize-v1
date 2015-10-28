@@ -61,8 +61,8 @@
 '#logo':{
 	top:"5%",
 	left:"2%",	
-	width:'80dp', //100
-	height:'80dp',//100
+	width:80, //100
+	height:80,//100
 	borderWidth:'3',
 	//borderRadius:'160',
 	//borderColor:'#611F53'
@@ -70,7 +70,7 @@
 '#socialbar':{
 	layout:"horizontal",
 	//horizontalWrap:false,
-	height:"32dp",
+	height:32,
 	right:"2%",
 	top:"75%",
 	bottom:"5%",
@@ -79,14 +79,14 @@
 },
 ".social":{
 	opacity:"1",
-	width:"24dp",
-	height:"24dp",
+	width:24,
+	height:24,
 	//borderColor:"green", borderWidth:1	
 },
 '#horBar':{
 	backgroundColor:Alloy.Globals.personDetails.horBarColor,
 	width:Ti.UI.FILL,
-	height:"2dp",
+	height:2,
 	top:"0",
 	bottom:"0",
 	left:"2%",
@@ -127,6 +127,6 @@
 		fontSize:Alloy.Globals.personDetails.bioSize,		
 	},
 	color:Alloy.Globals.personDetails.bioColor,
-	top:'5dp',
+	top:5,
 	width:"100%"
 }

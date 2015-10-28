@@ -4,13 +4,13 @@
 },
 
 "#fbRatingbar":{
-	top : '10dp',
+	top : 10,
 	center:{x:"50%"},
 	height:"50",
 }
 ,
 '#fbComment':{
-	top:'10dp',
+	top:10,
 	color:"#3589C8", //888
 	textAlign:"center",
 	width:"90%",
@@ -18,7 +18,7 @@
     left : '5%',
 },
 '#fbSubmit':{
-	top:'10dp',	
+	top:10,	
 	title:" Rate this session ",
 	center:{x:"50%"},
 	

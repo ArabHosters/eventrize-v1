@@ -68,9 +68,9 @@ function parseNoti(Messages){
 			var scontainer = Ti.UI.createView({
 				layout:"horizontal",
 				width:"100%",
-				//height:"60dp"
+				//height:60
 				height:Ti.UI.SIZE,
-				top:"5dp",
+				top:5,
 				//borderColor:"red",borderWidth:1,
 			});
 			
@@ -83,11 +83,11 @@ function parseNoti(Messages){
 				//borderColor:"blue",borderWidth:1,
 				//width:"10%",
 				width:Ti.UI.SIZE,
-				left:"10dp",
-				top:"10dp",
+				left:10,
+				top:10,
 				font:{
 					fontWeight:"bold",
-					fontSize:'16dp'
+					fontSize:16
 				},
 				verticalAlign:Ti.UI.TEXT_VERTICAL_ALIGNMENT_TOP
 			});
@@ -99,11 +99,11 @@ function parseNoti(Messages){
 				//borderColor:"green",borderWidth:1,
 				font:{
 					//fontWeight:"bold",
-					//fontSize:'14dp'
+					//fontSize:14
 				},			
 				height:Ti.UI.SIZE,
 				width:"75%",
-				//left:"10dp",
+				//left:10,
 				verticalAlign:Ti.UI.TEXT_VERTICAL_ALIGNMENT_TOP
 				
 			});
@@ -112,8 +112,8 @@ function parseNoti(Messages){
 				width:"80%",
 				left:"10%",
 				backgroundColor:"black",
-				top:"5dp",
-				height:"1dp"
+				top:5,
+				height:1
 			});
 			
 			scontainer.add(stitle);
@@ -145,7 +145,7 @@ function parseNoti(Messages){
 			text:L('notf_empty'),
 			color:"#611F53",
 			font:{
-				fontSize:'18dp'
+				fontSize:18
 			}
 			});
 		view = no_noti;
@@ -226,7 +226,7 @@ function fetchTwitter(){
 				var scontent = Ti.UI.createView({
 					layout:"horizontal",
 					width:"100%",
-					height:"60dp"
+					height:60
 				});
 				var stime = Ti.UI.createLabel({
 					text:"09:30 AM",
@@ -235,11 +235,11 @@ function fetchTwitter(){
 					//borderColor:"blue",borderWidth:1,
 					//width:"25%",
 					width:Ti.UI.SIZE,
-					left:"10dp",
-					//top:"10dp",
+					left:10,
+					//top:10,
 					font:{
 						fontWeight:"bold",
-						fontSize:'16dp'
+						fontSize:16
 					},
 					verticalAlign:Ti.UI.TEXT_VERTICAL_ALIGNMENT_CENTER
 				});
@@ -250,11 +250,11 @@ function fetchTwitter(){
 					//borderColor:"green",borderWidth:1,
 					font:{
 						fontWeight:"bold",
-						fontSize:'14dp'
+						fontSize:14
 					},			
 					height:Ti.UI.FILL,
 					width:Ti.UI.FILL,
-					left:"10dp",
+					left:10,
 					verticalAlign:Ti.UI.TEXT_VERTICAL_ALIGNMENT_CENTER
 					
 				});
@@ -263,7 +263,7 @@ function fetchTwitter(){
 					width:"80%",
 					left:"10%",
 					backgroundColor:"black",
-					height:"1dp"
+					height:1
 				});
 				
 				
@@ -295,14 +295,14 @@ function fetchTwitter(){
 
 HeaderView = function(options) {
 	var self = Ti.UI.createView(_.extend({
-		height:'35dp',
-		top:'5dp',
+		height:35,
+		top:5,
 	}, options.viewArgs || {}));
 	
 	var indicator = Ti.UI.createView({
 		top:0,
 		right:(options.optionWidth*(options.options.length-1))+'%',
-		bottom:'1dp',
+		bottom:1,
 		width:options.optionWidth+'%',
 		backgroundColor:'white',
 		opacity:"0.6"
@@ -312,11 +312,11 @@ HeaderView = function(options) {
 	var title = Ti.UI.createLabel({
 		text:options.title,
 		color:'#611F53',
-		left:'10dp',
+		left:10,
 		width:Ti.UI.SIZE,
 		height:Ti.UI.SIZE,
 		font: {
-			fontSize:'14dp',
+			fontSize:14,
 			fontWeight:"bold"
 		}
 	});
@@ -339,7 +339,7 @@ HeaderView = function(options) {
 			height:Ti.UI.SIZE,
 			width:Ti.UI.SIZE,
 			font: {
-				fontSize:'12dp'
+				fontSize:12
 			},
 			textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
 		});

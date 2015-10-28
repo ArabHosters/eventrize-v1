@@ -7,12 +7,12 @@
 	//backgroundColor:'#232323',
 	backgroundColor:'#fff',
 	opacity:0.75,
-	top:"50dp"
+	top:50
 },
 
 '#loader': {
-	width:'64dp',
-	height:'64dp'
+	width:64,
+	height:64
 },
 
 '#message': {
@@ -21,7 +21,7 @@
 	height:Ti.UI.SIZE,
 	width:Ti.UI.SIZE,
 	font: {
-		fontSize:'14dp',
+		fontSize:14,
 		fontWeight:'bold',
 		fontFamily:'Roboto'
 	}

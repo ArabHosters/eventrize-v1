@@ -68,17 +68,17 @@ function generateRows(tweets){
 				
 				var timage = Ti.UI.createImageView({
 					image : tweet.user.profile_image_url,
-					height:"48dip",
-					width:"48dip",
-					left:"10dp",
-					top:"4dp",
+					height:48,
+					width:48,
+					left:10,
+					top:4,
 					
 				});
 				
 				var titleNContent = Ti.UI.createView({
 					height:Ti.UI.SIZE,
 					width:Ti.UI.FILL,
-					left:"10dp",
+					left:10,
 					top:"4dip",
 					layout:"vertical"
 				});

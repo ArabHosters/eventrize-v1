@@ -21,12 +21,12 @@ function PersonRow(person, pid) {
 	// person photo
 	var photo = Ti.UI.createImageView({
 		image : person.sponsor_image,
-		top : '5dp',
-		bottom : '5dp',
+		top : 5,
+		bottom : 5,
 		defaultImage : "/img/eventrize-logo.png",
-		//left:'10dp',
-		//width:'150dp',
-		//height:'60dp',
+		//left:10,
+		//width:150,
+		//height:60,
 		//width : Ti.UI.SIZE,
 		//height : Ti.UI.SIZE,
 		//borderRadius:60,
@@ -64,7 +64,7 @@ function SectionHeader(title) {
 		},
 		textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
 		width : "100%",
-		height : "50dp"
+		height : 50
 	});
 
 	return label;

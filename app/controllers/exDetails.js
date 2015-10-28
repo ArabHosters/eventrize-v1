@@ -68,8 +68,8 @@ _.each(data.custom_fields.info_extend_detail,function(detail) {
  
 HeaderView = function(options) {
 	var self = Ti.UI.createView(_.extend({
-		height:'35dp',
-		top:'5dp',
+		height:35,
+		top:5,
 		//borderColor:"red",
 		//borderWidth:1
 	}, options.viewArgs || {}));
@@ -80,7 +80,7 @@ HeaderView = function(options) {
 	var indicator = Ti.UI.createView({
 		top:0,
 		right:(options.optionWidth*(options.options.length-1))+'%',
-		bottom:'1dp',
+		bottom:1,
 		width:options.optionWidth+'%',
 		backgroundColor:'white',
 		opacity:"0.6"
@@ -90,11 +90,11 @@ HeaderView = function(options) {
 	var title = Ti.UI.createLabel({
 		text:options.title,
 		color:'#000',
-		left:'10dp',
+		left:10,
 		width:Ti.UI.SIZE,
 		height:Ti.UI.SIZE,
 		font: {
-			fontSize:'14dp',
+			fontSize:14,
 			fontWeight:"bold"
 		}
 	});
@@ -118,7 +118,7 @@ HeaderView = function(options) {
 			height:Ti.UI.SIZE,
 			width:Ti.UI.SIZE,
 			font: {
-				fontSize:'12dp'
+				fontSize:12
 			},
 			textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
 		});

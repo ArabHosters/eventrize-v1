@@ -5,13 +5,13 @@
 },
 
 "#fbRatingbar":{
-	top : '10dp',
+	top : 10,
 	center:{x:"50%"},
 	height:"50",
 }
 ,
 '#fbComment':{
-	top:'10dp',
+	top:10,
 	color:"#3589C8", //888
 	textAlign:"left",
 	width:"90%",
@@ -22,14 +22,14 @@
     left : '5%',
 },
 '#fbSubmit':{
-	top:'10dp',
+	top:10,
 	height:Ti.UI.SIZE,
 	title:"Submit",
 	center:{x:"50%"},
 	//color:"#3589C8",
 	color:"white",
 	backgroundColor:Alloy.Globals.ThemeColor,
-	bottom:"10dp" 
+	bottom:10 
 }
 
 

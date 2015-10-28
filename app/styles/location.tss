@@ -1,6 +1,6 @@
 '#maps': {
-	top:'10dp',
-	left:'10dp',
-	right:'10dp',
-	bottom:'10dp'
+	top:10,
+	left:10,
+	right:10,
+	bottom:10
 }

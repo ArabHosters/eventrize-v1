@@ -45,9 +45,9 @@
 },
 "#bio":{
 	font:{
-		fontSize:'18dp'		
+		fontSize:18		
 	},
 	color:"#000",
-	top:'5dp',
+	top:5,
 	width:"100%"
 }

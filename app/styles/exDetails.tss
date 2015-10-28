@@ -26,7 +26,7 @@
 	color:"#840042",
 	//color:"#B50065",
 	font:{
-		fontSize:"20dp",
+		fontSize:20,
 		fontWeight:"bold",
 		font:"Roboto"
 	}
@@ -41,20 +41,20 @@
 '#socialbar':{
 	//layout:"horizontal",
 	horizontalWrap:false,
-	height:"32dp",
+	height:32,
 	left:"2%",
 	top:"65%",
 	bottom:"5%"
 },
 ".social":{
 	opacity:"1",
-	width:"16dp",
-	height:"16dp"	
+	width:16,
+	height:16	
 },
 '#horBar':{
 	backgroundColor:"#840042",
 	width:Ti.UI.FILL,
-	height:"2dp",
+	height:2,
 	top:"0",
 	bottom:"0"
 },
@@ -85,9 +85,9 @@
 },
 "#bio":{
 	font:{
-		fontSize:'18dp',		
+		fontSize:18,		
 	},
 	color:"#000",
-	top:'5dp',
+	top:5,
 	width:"100%"
 }

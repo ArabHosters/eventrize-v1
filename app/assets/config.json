@@ -1,82 +1,78 @@
 {
-	"lang":	{
-			"ar": "false",
-			"en": "true"
-		},
-	"APIURL":"http://www.eventrize.com/cscamp/api/events/get_event/?id=180",
-	"NotificationsURL":"http://www.eventrize.com/cscamp/api/notifications/get_notifications/",
-	"HbColor":"#611F53",
-	"HvColor":"#611F53",
-	"home": {
-			"headerTitleColor": "#611F53",
-			"headerTitleSize": "24",
-			"paraColor": "#000",
-			"paraSize": "18",
-			"backgroundColor":"white"
-		},
-	"schedule":{
-			"stimeColor":"#611F53",
-			"stimeSize":"16",
-			"stitleColor":"#000",
-			"stitleSize":"14",
-			"sbarColor":"#000",
-			"headerViewColor":"#E56227"
-		},
-	"ThemeColor":"#611F53",
-	"scheduleDetails":{
-		"headingSize":"20",
-		"subheadingColor":"#000",
-		"subheadingSize":"14",
-		"headerViewColor":"#E56227"
-	},
-	"PersonRow":{
-		"perNameColor":"#611F53" , 
-		"perjobColor":"#373e47" ,
-		"perNameSize":"20" , 
-		"perjobSize":"14" ,
-		"sbarColor":"#000"
-		
-	},
-	"personDetails":{
-		"backgroundColor":"white",
-		"headingSize":"20",
-		"subheadingColor":"#000",
-		"subheadingSize":"14",
-		"headingColor":"#611F53",
-		"horBarColor":"#611F53",
-		"pagecontentBG":"white", 
-		"bioSize":"18",
-		"bioColor":"#000"
-	},
-	"sponsors":{
-		"backgroundColor":"white",
-		"labelBG":"#09F",
-		"labelColor":"white",
-		"labelSize":"20"
-		
-	},
-	"twitter":{
-		"backgroundColor":"white",
-		"snameColor":"black",
-		"snameSize":"14",
-		"stextColor":"black",
-		"stextSize":"14",
-		"sbarBG":"#999999",
-		"sbarHeight":"1"
-	},
-	"menu":["home","schedule","speakers","exhibitors","sponsors","location","notifications","twitter","training","ctf","app"],
-	"tabs":["home","schedule","speakers","location","notifications"],
-	"menuConf":{
-		"backgroundColor":"#1e1e1e",
-		"itemsColor":"#ccc",
-		"itemsSize":"20",
-		"sep1BG":"#141414",
-		"sep2BG":"#2f2f2f",
-		"eventrizeColor":"#257FCE",
-		"eventrizeSize":"18",
-		"mcolor1":"#e87731",
-		"mcolor0":"#ccc"
-		
-	}
-	
+  "lang": {
+    "ar": "false",
+    "en": "true"
+  },
+  "APIURL": "http://www.eventrize.com/cscamp/api/events/get_event/?id=180",
+  "NotificationsURL": "http://www.eventrize.com/cscamp/api/notifications/get_notifications/",
+  "HbColor": "#611F53",
+  "HvColor": "#611F53",
+  "ThemeColor": "#611F53",
+  "home": {
+    "headerTitleColor": "#611F53",
+    "headerTitleSize": "24",
+    "paraColor": "#000",
+    "paraSize": "18",
+    "backgroundColor": "white"
+  },
+  "schedule": {
+    "stimeColor": "#611F53",
+    "stimeSize": "16",
+    "stitleColor": "#000",
+    "stitleSize": "14",
+    "sbarColor": "#000",
+    "headerViewColor": "#E56227"
+  },
+  "scheduleDetails": {
+    "headingSize": "20",
+    "subheadingColor": "#000",
+    "subheadingSize": "14",
+    "headerViewColor": "#E56227"
+  },
+  "PersonRow": {
+    "perNameColor": "#611F53",
+    "perjobColor": "#373e47",
+    "perNameSize": "20",
+    "perjobSize": "14",
+    "sbarColor": "#000"
+  },
+  "personDetails": {
+    "backgroundColor": "white",
+    "headingSize": "20",
+    "subheadingColor": "#000",
+    "subheadingSize": "14",
+    "headingColor": "#611F53",
+    "horBarColor": "#611F53",
+    "pagecontentBG": "white",
+    "bioSize": "18",
+    "bioColor": "#000"
+  },
+  "sponsors": {
+    "backgroundColor": "white",
+    "labelBG": "#09F",
+    "labelColor": "white",
+    "labelSize": "20"
+  },
+  "twitter": {
+    "backgroundColor": "white",
+    "snameColor": "black",
+    "snameSize": "14",
+    "stextColor": "black",
+    "stextSize": "14",
+    "sbarBG": "#999999",
+    "sbarHeight": "1"
+  },
+  "menu": ["home", "schedule", "speakers", "exhibitors", "sponsors", "location", "notifications", "twitter", "training", "ctf", "app"],
+  "tabs": ["home", "schedule", "speakers", "location", "notifications"],
+  "menuConf": {
+    "backgroundColor": "#1e1e1e",
+    "itemsColor": "#ccc",
+    "itemsSize": "20",
+    "sep1BG": "#141414",
+    "sep2BG": "#2f2f2f",
+    "eventrizeColor": "#257FCE",
+    "eventrizeSize": "18",
+    "mcolor1": "#e87731",
+    "mcolor0": "#ccc"
+  }
 }

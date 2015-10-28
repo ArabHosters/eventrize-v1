@@ -14,8 +14,8 @@
 	top:0
 },
 '#user_avatar':{
-	width:'50dp',
-	height:'50dp',
+	width:50,
+	height:50,
 	borderWidth:'1',
 	borderRadius:'20',
 	borderColor:'#1c1c1c',
@@ -25,7 +25,7 @@
 	color:'white',
 	left:70,
 	font:{
-		fontSize:'20dp',
+		fontSize:20,
 		fontWeight:'bold'
 	},
 }
